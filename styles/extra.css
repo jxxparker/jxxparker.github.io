@@ -1,0 +1,17 @@
+/* Additions: full-width project card, experience section, skills */
+.portfolios { grid-template-columns: 1fr; }
+@media screen and (min-width: 900px) {
+  .portfolios .portfolio-content { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+}
+.sub-title { margin: 2.5rem 0 1rem; font-size: 1.4rem; color: var(--color-secondary); }
+.skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.2rem; }
+.skill-group { border: 1px solid var(--color-grey-5); border-radius: 12px; padding: 1.2rem; }
+.skill-group h4 { margin-bottom: .6rem; color: var(--color-white); }
+.skill-group ul { list-style: none; display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; }
+.skill-group li { background: var(--color-grey-5); color: var(--color-grey-1); border-radius: 20px; padding: .25rem .8rem; font-size: .85rem; }
+.timeline { border-left: 2px solid var(--color-grey-5); padding-left: 1.5rem; }
+.job { position: relative; margin-bottom: 1.8rem; }
+.job::before { content: ""; position: absolute; left: -1.95rem; top: .45rem; width: 12px; height: 12px; border-radius: 50%; background: var(--color-secondary); }
+.job h4 { color: var(--color-white); }
+.job .meta { color: var(--color-grey-3); font-size: .9rem; margin: .2rem 0 .5rem; }
+.job p { color: var(--color-grey-1); line-height: 1.6; }
